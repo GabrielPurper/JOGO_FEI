@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue: The Pit</title>
+    <style>
+        /* Garante que a página não crie barras de rolagem e fique escura */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* O Canvas é estilizado dinamicamente pelo JavaScript, 
+           mas deixamos um fallback de segurança aqui */
+        canvas {
+            image-rendering: pixelated; /* Mantém a nitidez caso use sprites pixel art */
+            /*image-rendering: crisp-edges;*/
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="game13.js"></script>
+
+</body>
+</html>
